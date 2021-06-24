@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	    <title>to do list</title>
+		<link rel="stylesheet" href="../static/list.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	</head>
+	<body>
+
+	   <div class="container">
+		   <h1>Register</h1>
+		   <div class="notcomp">
+		    	<h3 style="color:red;">{{data['error_message']}}</h3>
+	   		</div>
+		   <form action="/register_pro" method="post">
+			   <input type="text" class="txtb" placeholder="User Name" name="name" required>
+			   <input type="email" class="txtb" placeholder="Email" name="email" required>
+			   <input type="password" class="txtb" placeholder="Password" name="pass" required>
+			   <input type="submit" class="txtbtn" value="Register">
+		   </form>
+	   </div>
+
+	</body>
+</html>

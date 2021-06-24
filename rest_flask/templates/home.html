@@ -1,0 +1,25 @@
+{% include 'header.html'%}
+<body>
+
+{% if data['username']!= None:%}
+<a href="/logout">Logout</a>
+{%endif%}
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+
+<h1>
+  test page
+</h1>
+<h1>{{data['name']}}</h1>
+<h1>{{data['email']}}</h1>
+<img src="{{data['image']}}">
+{{data['temp']}}
+</body>
+</html>
