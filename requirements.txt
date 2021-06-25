@@ -6,7 +6,6 @@ click==8.0.1
 clickclick==20.10.2
 colorama==0.4.4
 connexion==2.7.0
-dataclasses==0.8
 Flask==2.0.1
 Flask-RESTful==0.3.9
 idna==2.10
